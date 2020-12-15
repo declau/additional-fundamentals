@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Html Golang</title>
+
+    <style>
+        marquee {
+            color: purple;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,6 +19,14 @@
     <marquee>
         <h4>Seja bem vindo, {{ .Nome }}</h4>
     </marquee>
+
+    <button id="botao">Clique Aqui!</button>
+
+    <script>
+        let botao = document.getElementById("botao")
+        botao.onclick = () => alert("Botão Clicado com Sucesso!")
+        
+    </script>
 </body>
 
 </html>
